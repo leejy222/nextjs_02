@@ -1,4 +1,4 @@
-import { common } from "@/app/type/index"
+import { common } from "@/type/index"
 
 function page(props:common.props) {
   return (

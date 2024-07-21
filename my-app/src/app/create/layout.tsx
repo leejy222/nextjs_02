@@ -1,4 +1,4 @@
-import { common } from "@/app/type/index"
+import { common } from "@/type/index"
 
 export default function Layout(props:common.props) {
     return(
