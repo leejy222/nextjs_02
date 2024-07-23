@@ -2,6 +2,6 @@
 nextjs_tutorials 
 
 skills 
-> nextjs 14
-> typescript
-> json-server
+- nextjs 14
+- typescript
+- json-server
