@@ -1,7 +1,7 @@
 import { common, topics } from "@/type/index"
 
 export default async function Read(props:common.props) {
-    const response = await fetch(`http://localhost:9999/topics/${props.params.id}`);
+    const response = await fetch(process.env.NEXT_PUBLIC_API_URL+`/topics/${props.params.id}`,{ cache: 'no-store'});
     const topic = await response.json() as topics.getData;
     return(
         <>

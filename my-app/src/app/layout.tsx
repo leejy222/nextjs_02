@@ -1,10 +1,10 @@
-// "use client";
 import "./globals.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { topics } from "../type/index"
 import { getTopics }  from "../api/topics/index"
 import { Metadata } from "next";
+import { Control } from "./control"
 
 export const metadata: Metadata = {
   title: "Nextjs Tutorials",
@@ -16,6 +16,8 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
 
   /** react hooks > client side rendering */
   // const [topics, setTopics] = useState<topics.getList>([] as topics.getList);
@@ -37,11 +39,7 @@ export default async function RootLayout({
           })}
         </ol>
         {children}
-        <ul>
-          <li><Link href="/create">Create</Link></li>
-          <li><Link href="/update/1">Update</Link></li>
-          <li><input type="button" value="delete" /></li>
-        </ul>
+        <Control />
       </body>
     </html>
   );

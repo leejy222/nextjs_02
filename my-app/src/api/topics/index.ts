@@ -1,1 +1,2 @@
-export const getTopics = () => fetch('http://localhost:9999/topics');
+// TODO : cache 확인 ! router.refresh() 동작하지않아 일시적으로 no-sotre 처리...
+export const getTopics = () => fetch(process.env.NEXT_PUBLIC_API_URL+'topics', { cache: 'no-store'});

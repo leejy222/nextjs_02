@@ -1,5 +1,7 @@
+import { StyledString } from "next/dist/build/swc"
+
 export interface getData {
-    id : number,
+    id : string | number,
     title: string,
     body: string
 }

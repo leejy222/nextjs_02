@@ -6,7 +6,7 @@ export default function Home() {
       <h2>Welcome</h2>
       hello, WEB !
       <br></br>
-      <img src="/favicon.png"></img>
+      {/* <img src="/favicon.png"></img> */}
     </>
   );
 }
